@@ -1,0 +1,16 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+   "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    }
+  }
+}

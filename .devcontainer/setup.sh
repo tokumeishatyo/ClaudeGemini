@@ -2,7 +2,7 @@
 
 # セットアップスクリプト - devcontainer起動時に実行される
 
-echo "🚀 Setting up WPF development environment for user: klab"
+echo "🚀 Setting up Claude code and Gemini on tmux development environment for user: klab"
 
 # カスタム.bashrcの確認
 if [ -f "/home/klab/.bashrc" ]; then
@@ -16,19 +16,10 @@ fi
 
 # .bashrcの読み込み
 source /home/klab/.bashrc
+sudo chown klab:klab /home/klab/.bashrc
 
 echo "Install Gemini CLI"
 npm install -g @google/gemini-cli
 
-# 権限の調整
-#chown -R klab:klab /workspace
-#chmod -R 755 /workspace
-
-echo "🎉 Setup completed successfully!"
-echo "🔍 You can now:"
-echo "   - Edit WPF code in the container"
-echo "   - Build projects with: dotnet build"
-echo "   - Test GUI on your Windows host environment"
-echo ""
-echo "📁 Workspace: /workspace"
-echo "🏠 Home: /home/klab"
+claude mcp add -s local --transport http context7 https://mcp.context7.com/mcp
+claude mcp add -s local playwright npx @playwright/mcp@latest

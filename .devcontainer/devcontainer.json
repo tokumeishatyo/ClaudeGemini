@@ -11,19 +11,11 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-dotnettools.csharp",
-                "ms-dotnettools.csdevkit",
-                "ms-dotnettools.vscode-dotnet-runtime",
                 "ms-vscode.vscode-json",
                 "ms-vscode.xml",
-                "editorconfig.editorconfig",
-                "ms-vscode.powershell",
-                "google.geminicodeassist"
+                "editorconfig.editorconfig"
             ],
             "settings": {
-                "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
-                "omnisharp.enableEditorConfigSupport": true,
-                "omnisharp.enableRoslynAnalyzers": true,
                 "geminicodeassist.updateChannel": "Insiders",
                 "terminal.integrated.defaultProfile.linux": "bash",
                 "terminal.integrated.profiles.linux": {
