@@ -18,7 +18,8 @@ fi
 source /home/klab/.bashrc
 sudo chown klab:klab /home/klab/.bashrc
 
-echo "Install Gemini CLI"
+echo "Install Claude Code and Gemini CLI"
+npm install -g @anthropic-ai/claude-code
 npm install -g @google/gemini-cli
 
 claude mcp add -s local --transport http context7 https://mcp.context7.com/mcp
