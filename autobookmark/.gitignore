@@ -1,0 +1,82 @@
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Generated files (will be stored in docs/)
+docs/opus_limit_log.md
+docs/requirements.md
+docs/external_spec.md
+docs/detailed_spec.md
+docs/unit_test_plan.md
+docs/integration_test_plan.md
+docs/coding_log.md
+docs/discussion_log.md
+docs/work_notes.md
+
+# Activity logs (will be stored in logs/)
+logs/activity_log.txt
+logs/developer_work_log.txt
+logs/git_activity_log.txt
+logs/time_tracking_log.txt
+logs/time_report.txt
+logs/current_task.txt
+logs/*.png
+logs/*.jpg
+logs/*.jpeg
+logs/*.gif
+
+# Build outputs
+dist/
+build/
+out/
+
+# Node.js (if generated projects use Node.js)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Python (if generated projects use Python)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging
